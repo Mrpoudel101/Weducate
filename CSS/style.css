@@ -1,0 +1,114 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the container div */
+.home {
+    padding: 10px 10px; /* Space above and below the navbar items */
+    margin-left: 70px;
+}
+
+/* Styling the unordered list */
+.navbar {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: left; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Spacing between the items */
+}
+
+/* Styling the list items */
+.nav_item {
+    color: black; /* Text color */
+    padding: 5px 5px; /* Spacing inside each item */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect for the list items */
+.nav_item:hover {
+    border-radius: 5px; /* Rounded corners */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Styling for the Dropdown Menu */
+.nav_item_dropdown {
+    position: relative; /* Make sure the dropdown is positioned relative to the parent */
+}
+ .nav_item_dropdown:hover{
+    border-radius: 5px;
+    transform: scale(1.05);
+    padding: 5px 5px;
+ }
+
+.dropdown_menu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolutely positioned relative to the parent */
+    top: 100%; /* Position it just below the "Courses" item */
+    left: 0;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    background-color: white;
+}
+
+/* Dropdown Menu Items */
+.dropdown_item {
+    color: black;
+    padding: 10px 15px;
+    text-align: left;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+    list-style: none;
+}
+
+.dropdown_item:hover {
+    transform: scale(1.05);
+}
+
+/* Dropdown Icon Style */
+.dropdown_icon {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Styling for item_join_login */
+.item_join_login {
+    margin-left: auto; /* Push to the right side */
+    display: flex;
+    align-items: center;
+}
+
+.list_join_login {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+
+}
+
+.item_login,.item_join{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black; /* Black border for the box */
+    background-color: white; /* Optional: background color for clarity */
+    border-radius: 5px; /* Rounded corners for the box */
+    margin-right: 15px;
+}
+.item_login{
+    background-color: black;
+    color: white;
+}
+
+
+.item_login:hover{
+    transform: scale(1.05);
+}
+.item_join:hover{
+    transform: scale(1.05);
+}
